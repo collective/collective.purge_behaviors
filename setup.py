@@ -25,20 +25,19 @@ setup(
     url='https://github.com/eleddy/collective.purge_behaviors',
     license='BSD',
     packages=find_packages(),
+    namespace_packages=['collective'],
     install_requires=[
         'setuptools',
         'plone.app.dexterity',
     ],
     extras_require={
         'test': [
+            'plone.api',
             'nose',
             'nose-selecttests',
             'coverage',
             'unittest2',
             'flake8',
-        ],
-        'development': [
-            'check-manifest',
         ],
     },
     entry_points="""

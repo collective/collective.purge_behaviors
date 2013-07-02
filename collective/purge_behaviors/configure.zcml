@@ -8,16 +8,16 @@
     <five:registerPackage package="." />
     <include file="behaviors.zcml" />
 
-    <adapter factory=".behaviors.purge.PurgeParentPaths" 
+    <adapter factory=".purge.PurgeParentPaths" 
              name="plone.content.purge_parent" />
 
-    <adapter factory=".behaviors.purge.PurgeSiblingPaths" 
+    <adapter factory=".purge.PurgeSiblingPaths" 
              name="plone.content.purge_siblings" />
 
-    <adapter factory=".behaviors.purge.PurgeContentsPaths" 
+    <adapter factory=".purge.PurgeContentsPaths" 
              name="plone.content.purge_contents" />
 
-    <adapter factory=".behaviors.purge.PurgeSitePaths" 
+    <adapter factory=".purge.PurgeSitePaths" 
              name="plone.content.purge_site" />
 
 </configure>
