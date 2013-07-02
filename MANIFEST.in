@@ -1,0 +1,2 @@
+graft collective.purge_behaviors
+include *.cfg *.rst *.in LICENSE

@@ -1,0 +1,23 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:five="http://namespaces.zope.org/five"
+   xmlns:cmf="http://namespaces.zope.org/cmf"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="collective.purge_behaviors">
+
+    <five:registerPackage package="." />
+    <include file="behaviors.zcml" />
+
+    <adapter factory=".behaviors.purge.PurgeParentPaths" 
+             name="plone.content.purge_parent" />
+
+    <adapter factory=".behaviors.purge.PurgeSiblingPaths" 
+             name="plone.content.purge_siblings" />
+
+    <adapter factory=".behaviors.purge.PurgeContentsPaths" 
+             name="plone.content.purge_contents" />
+
+    <adapter factory=".behaviors.purge.PurgeSitePaths" 
+             name="plone.content.purge_site" />
+
+</configure>
