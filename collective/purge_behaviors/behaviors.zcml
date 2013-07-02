@@ -8,25 +8,25 @@
 
   <plone:behavior
         title="Purge parent"
-        description="When the item is edited purge, the parent"
+        description="When an item is edited, purge its parent"
         provides=".purge.IPurgeParent"
         />
 
   <plone:behavior
         title="Purge siblings"
-        description="When the item is edited, purge its siblings"
+        description="When an item is edited, purge its siblings"
         provides=".purge.IPurgeSiblings"
         />
 
   <plone:behavior
         title="Purge contents"
-        description="When an folder is edited, purge all of its contents"
+        description="When a folderish item is edited, purge all of its contents"
         provides=".purge.IPurgeContents"
         />
 
   <plone:behavior
         title="Purge site root"
-        description="When this item is edited, purge the site root"
+        description="When an item is edited, purge the site root"
         provides=".purge.IPurgeSite"
         />
 
