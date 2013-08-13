@@ -1,2 +1,8 @@
-graft collective.purge_behaviors
-include *.cfg *.rst *.in LICENSE
+include MANIFEST.in
+include *.rst
+include *.txt
+include *.zcml
+recursive-include collective *
+recursive-include docs *
+global-exclude *pyc .gitignore
+prune dis

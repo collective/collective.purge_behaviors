@@ -13,7 +13,7 @@ def read(*rnames):
 setup(
     name='collective.purge_behaviors',
     version='0.1',
-    description='A set of behaviors that are assignable to custom dexterity types for complex system setups',
+    description='A set of dexterity behaviors for Plone that are assignable to custom dexterity types for complex system setups',
     long_description=read('README.rst') +
                      read('HISTORY.rst') +
                      read('LICENSE'),
@@ -22,7 +22,7 @@ setup(
     ],
     author='eleddy',
     author_email='elizabeth.leddy@gmail.com',
-    url='https://github.com/eleddy/collective.purge_behaviors',
+    url='https://github.com/collective/collective.purge_behaviors',
     license='BSD',
     packages=find_packages(),
     namespace_packages=['collective'],
