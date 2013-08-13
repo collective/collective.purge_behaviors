@@ -12,7 +12,7 @@ def read(*rnames):
 
 setup(
     name='collective.purge_behaviors',
-    version='0.1',
+    version='0.2',
     description='A set of dexterity behaviors for Plone that are assignable to custom dexterity types for complex system setups',
     long_description=read('README.rst') +
                      read('HISTORY.rst') +
