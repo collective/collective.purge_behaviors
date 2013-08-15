@@ -1,8 +1,8 @@
+include LICENSE
 include MANIFEST.in
 include *.rst
 include *.txt
-include *.zcml
 recursive-include collective *
-recursive-include docs *
 global-exclude *pyc .gitignore
-prune dis
+prune dist
+graft collective

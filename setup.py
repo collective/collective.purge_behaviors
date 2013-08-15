@@ -46,4 +46,9 @@ setup(
     """,
     include_package_data=True,
     zip_safe=False,
+
+    package_data = {
+        # If any package contains *.txt or *.rst files, include them:
+        '': ['*.txt', '*.rst', '*.zcml', 'LICENSE'],
+    },
 )
